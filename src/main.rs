@@ -6,7 +6,12 @@
 // get data from said wizard
     // decode it and ? format it ?
 // display data on bash with colors if possible 
+#[macro_use]
 
+mod args;
+use args::HelpMeArgs;
+use clap::Parser;
 fn main() {
-    println!("Hello, world!");
+    let args: HelpMeArgs = HelpMeArgs::parse(); 
+    println!("{}", args.Qustion)
 }
