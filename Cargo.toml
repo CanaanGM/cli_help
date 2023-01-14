@@ -7,3 +7,7 @@ edition = "2021"
 
 [dependencies]
 clap = {version= '4.0.29',features = ["derive"]}
+ureq = {version='2.6.1', features = ["json"]}
+
+dotenv = "0.15.0"
+tinyjson = "2.5.1"
